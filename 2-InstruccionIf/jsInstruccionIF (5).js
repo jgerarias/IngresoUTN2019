@@ -6,13 +6,10 @@ var edad;
 
 edad = parseInt (document.getElementById("edad").value);
 
-if 
-{ 
-    (edad >=13 || edad <= 18)
+if (!(edad >=13 && edad <= 18))
 
-    alert ("La persona es adolecente");
+{
+    alert ("La persona NO es adolecente")
 }
 
-
-
-//FIN DE LA FUNCIÓN
+}//fin de la funcion
