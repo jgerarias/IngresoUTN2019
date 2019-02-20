@@ -4,45 +4,20 @@ function Mostrar()
 var mesDelAño = document.getElementById('mes').value;
 
 switch (mesDelAño){
-    
-    case "Enero":
-    alert ("Falta para el invierno");
-break;
-    
-    case "Febrero":
-    alert ("Falta para el invierno");
-break;
-    
-    case "Marzo":
-    alert ("Falta para el invierno");
-break;
-
-    case "Abril":
-    alert ("Falta para el invierno");
-    break;
-       case "Mayo":
-    alert ("Falta para el invierno");
-break;
-
-    case "Junio":
-    alert ("Falta para el invierno");
-break;
     case "Julio":
-    alert ("Abrigate que hace frio");
-break;
     case "Agosto":
-    alert ("Abrigate que hace frio");
-break;
+        alert (" Abrigate que hace frio");
+        break;
+
     case "Septiembre":
-    alert ("ya paso el invierno");
-break;
+    case "Octubre":
     case "Noviembre":
-    alert ("ya paso el invierno");
-break;
     case "Diciembre":
-    alert ("ya paso el invierno");
-break;
+        alert ("Ya pasamos el frio, ahora calor!!!");
+        break;
 
+    default:
+        alert("Falta para el invierno")    
+      
 }
-
 }

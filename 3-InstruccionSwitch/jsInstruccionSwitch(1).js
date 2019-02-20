@@ -9,11 +9,11 @@ var mesDelAño = document.getElementById("mes").value;
 switch (mesDelAño){
     
     case "Enero":
-    alert ("que comiences bien el año!!!.");
+    alert ("Que comiences bien el año!!!.");
 break;
     
     case "Marzo":
-    alert ("que comiences bien el año!!!.");
+    alert ("A clases");
 break;
     
     case "Julio":
