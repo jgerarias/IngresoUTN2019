@@ -8,7 +8,7 @@ function Mostrar()
 		//document.write() escribe en el html
 		//"<br>" el br lista una debajo del otro
 		document.write ("numero "+contador +"<br>");
-		contador=contador-1
+		contador=contador-1;
 	}
 	
 

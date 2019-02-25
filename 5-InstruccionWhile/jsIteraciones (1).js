@@ -7,7 +7,7 @@ var contador;
 		//console.log() escribe en la consola
 		//document.write() escribe en el html
 		document.write ("numero "+contador);
-		contador=contador+1
+		contador=contador+1;
 	}	
 	
 	
