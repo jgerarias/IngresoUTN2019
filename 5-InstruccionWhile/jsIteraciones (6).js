@@ -1,23 +1,20 @@
 function Mostrar()
 {
 
-	var contador=1;
-	var acumulador = 0;
-	
+	var contador=0;
+	var acumulador=0;
+	var numero;
 
-	acumulador = prompt ("ingrese numero");
-while (contador < 5){
+while (contador <5 ){
 
 	alert("Ingrese siguente numero");
 
-	acumulador = Number( prompt ("ingrese numero"));
-
-	contador = contador +1;
-
+	numero = parseInt( prompt ("ingrese numero"));
+	acumulador = numero + acumulador;
+	contador++;
 }
 
-
 document.getElementById('suma').value=acumulador;
-document.getElementById('promedio').value=acumulador/5;
+document.getElementById('promedio').value=acumulador/contador;
 
 }//FIN DE LA FUNCIÓN

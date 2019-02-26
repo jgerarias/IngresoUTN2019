@@ -16,6 +16,10 @@ switch (true){
     case laHora >= 20 && laHora <=24 || laHora >=0 && laHora <=6:
         alert("Es de noche");
         break;
+
+    case laHora > 24 && laHora > 0:
+        alert("La hora no existe");
+        break;     
         
 }
 

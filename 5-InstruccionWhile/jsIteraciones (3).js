@@ -3,10 +3,15 @@ function Mostrar()
 
 var clave = prompt("ingrese el número clave.");
 
-while (clave!="utn750"){
-    alert ("Clave Incorrecta");
-    clave = prompt ("Vuelva a ingresar su clave. Ayuda la clave es utn750");
+/*validaciones
+while (condicion) esta condicion tiene que ser falsa
+avise el error y pide el dato nuevamente
+*/
+
+while (clave != "utn750"){
+  clave = prompt ("Clave incorrecta. Reingrese clave")
 }
-alert ("Calve correcta");
+
+    alert ("clave correta");
 
 }//FIN DE LA FUNCIÓN

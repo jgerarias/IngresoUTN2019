@@ -1,16 +1,18 @@
 function Mostrar()
 {
-	var contador;
-	contador =10;
-	while (contador>=1){
-
-		//console.log() escribe en la consola
-		//document.write() escribe en el html
-		//"<br>" el br lista una debajo del otro
-		document.write ("numero "+contador +"<br>");
-		contador=contador-1;
-	}
 	
+var i = 11;
+
+	while (i > 1){
+	i--;
+	document.write(i + "<br>")
+	//console.log (i)
+	}	
+	
+	
+	
+	
+	//alert('iteración while');
 
 
 }//FIN DE LA FUNCIÓN

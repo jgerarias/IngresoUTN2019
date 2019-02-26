@@ -14,6 +14,7 @@ switch (mesDelAño){
     case "Septiembre":
     case "Noviembre":
         alert ("Tiene 30 dias");
+        break;
 
     default:
         alert ("Tiene 31 dias");
