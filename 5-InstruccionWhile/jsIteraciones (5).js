@@ -1,14 +1,18 @@
 function Mostrar()
 {
 
-var sexo = prompt("ingrese f ó m .");
-sexo.toLocaleLowerCase();//pasa lo que tenemos
-//en la variable lo pasa a minuscula.
+var sexo = prompt("ingrese f ó m .").toLocaleLowerCase();
+/*toLocaleLowerCase toma el caranter en mayuscula y lo 
+convierte a minuscula
+toUpperCase() para convertir a “mayúsculas”.
+*/
+while (!(sexo == "f" || sexo == "m")){
 
-while (sexo != "f" && sexo != "m"){
+    alert ("incorrecto");
+    sexo = prompt("ingrese f ó m .");
 
-sexo = prompt("Reingrese f o m segun corresponda ")
 }
+
 document.getElementById('Sexo').value=sexo;
 
 }//FIN DE LA FUNCIÓN

@@ -1,14 +1,15 @@
 function Mostrar()
 {
 
-var numero = parseInt( prompt("ingrese un número entre 0 y 10."));
-
-while (!(numero >= 0 && numero <= 10)){
-//while (numero < 0 || numero > 10) otra forma
-numero = parseInt ( prompt ("Numero Incorrecto. Reingrese"));
-
+	var numero = prompt("ingrese un número entre 0 y 10.");
+while (numero < 0 || numero > 10 || isNaN (numero)){
+/* isNaN intenta convertir el parámetro pasado a un número.
+Si el parámetro no se puede convertir, devuelve true;
+en caso contrario, devuelve false
+*/
+	alert ("ingreso incorrecto");
+	numero = prompt("ingrese un número entre 0 y 10.");
 }
-document.getElementById("Numero").value = numero
-	//alert ("Numero Correcto")
-
-}//FIN DE LA FUNCIÓN
+alert("Ingreso correcto");
+document.getElementById("Numero").value = numero;
+}//FIN DE LA FUNCIÓN	
