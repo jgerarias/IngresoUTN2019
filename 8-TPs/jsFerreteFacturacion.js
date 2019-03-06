@@ -8,34 +8,30 @@ function Sumar ()
     var num1;
     var num2;
     var num3;
-    var resultado;
+    var suma;
 
-num1 = parseFloat (document.getElementById("PrecioUno").value);
-num2 = parseFloat (document.getElementById("PrecioDos").value);
-num3 = parseFloat (document.getElementById("PrecioTres").value);
-    
-    resultado = (num1+num2+num3);
+    num1 = parseInt(document.getElementById("PrecioUno").value);
+    num2 = parseInt(document.getElementById("PrecioDos").value);
+    num3 = parseInt(document.getElementById("PrecioTres").value);
 
-        alert ("La suma es " +resultado);
+    suma = num1+num2+num3;
 
+    alert("La suma es "+ suma);
 }
 function Promedio () 
 {
     var num1;
     var num2;
     var num3;
-    var resultado;
+    var promedio;
 
-num1 = parseFloat (document.getElementById("PrecioUno").value);
-num2 = parseFloat (document.getElementById("PrecioDos").value);
-num3 = parseFloat (document.getElementById("PrecioTres").value);
-    
-    resultado = (num1+num2+num3) / 3;    
+    num1 = parseInt(document.getElementById("PrecioUno").value);
+    num2 = parseInt(document.getElementById("PrecioDos").value);
+    num3 = parseInt(document.getElementById("PrecioTres").value);
 
-        alert(" El promedio es " + resultado)
-    
+    promedio = (num1+num2+num3)/3;
 
-
+    alert("El promedio es " + promedio.toFixed(2));
 }
 function PrecioFinal () 
 {
@@ -43,17 +39,16 @@ function PrecioFinal ()
     var num1;
     var num2;
     var num3;
-    var iva = 21/100
-    var resultado;
-    var resultadoiva
+    var suma;
+    var precioFinal;
+    var iva = 0.21;
 
-num1 = parseFloat (document.getElementById("PrecioUno").value);
-num2 = parseFloat (document.getElementById("PrecioDos").value);
-num3 = parseFloat (document.getElementById("PrecioTres").value);
-    
-    resultado = (num1+num2+num3);
-    resultadoiva = (resultado * iva) + resultado
+    num1 = parseInt(document.getElementById("PrecioUno").value);
+    num2 = parseInt(document.getElementById("PrecioDos").value);
+    num3 = parseInt(document.getElementById("PrecioTres").value);
+  
+    suma = num1+num2+num3;
+    precioFinal = (suma*iva) + suma
 
-        alert ("La suma es " +resultadoiva);   
-
+    alert("El precio fina con el iva de "+ iva +"% es "+ precioFinal.toFixed(2))
 }
