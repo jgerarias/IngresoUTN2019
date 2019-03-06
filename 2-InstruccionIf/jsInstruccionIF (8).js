@@ -1,16 +1,20 @@
 function Mostrar()
 {
-//tomo la edad  
-
+/*tomo la edad
+Al ingresar una edad menor a 18 años y un estado
+civil distinto a "Soltero", NO HACER NADA, 
+pero si no es asi, y es soltero y no es menor,
+mostrar el siguiente mensaje: 'Es soltero y no es menor.'  
+*/
+	
 var edad;
-var estadocivil;	
+var estado;
 
-edad = document.getElementById("edad").value;
-estadocivil=document.getElementById("estadoCivil").value;
+edad = parseInt(document.getElementById("edad").value);
+estado = document.getElementById("estadoCivil").value;
 
-if (!(edad < 18 && estadocivil != "Soltero"))
-{
-alert ("Es soltero y no es menor");
+if (edad >= 18 && estado == "Soltero"){
+    alert("Es soltero y no es menor");
 }
 
 }//FIN DE LA FUNCIÓN

@@ -2,11 +2,9 @@ function Mostrar()
 {
 
 var repetciones = prompt("ingrese el número de repeticiones");
-while (isNaN (repetciones)){
-    var repetciones = prompt("ingrese el número de repeticiones");
-}
-for( i = 0 ; i< repetciones; i++){
-    document.write ("Hola UTN FRA"+"<br>");
-}
+
+for (var i = 1; i <= repetciones; i++) {
+    document.write("hola utn FRA "+ i +"<br>");
+  }
 
 }//FIN DE LA FUNCIÓN

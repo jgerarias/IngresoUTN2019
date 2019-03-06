@@ -7,28 +7,34 @@ function Mostrar()
 	var numero;
 	var respuesta;
 	var flag=0;
+
 	do{
-		numero = parseInt( prompt (contador+1+") Ingrese numero"));
-		while (isNaN(numero)){
-			numero = parseInt( prompt (contador+1+") Ingrese numero"));
+		numero = parseInt(prompt(contador+1+ " Ingrese un numero"));
+		while(isNaN(numero)){
+			numero = parseInt(prompt(contador+1+ " Ingrese un numero"));
 		}
-	
-		if(numero>=0){
-		positivo = numero+positivo;	
-	
+
+			if (numero > 0){
+			positivo = numero+positivo;
 		}
-		else{
-		flag =1	
-		negativo = numero*negativo;
+			
+
+			else {
+			negativo = numero * negativo;
+			flag=1;
 		}
-	respuesta = confirm ("Desea continuar");
-	contador++;
+		contador++;
+		respuesta = confirm("Desea continual");
+		
+
 	}while(respuesta);
-	
-	document.getElementById('suma').value=positivo;
-	if(flag==0){
-		negativo=0;
-	}
-	document.getElementById('producto').value=negativo;
+
+document.getElementById('suma').value=positivo;
+
+if (flag == 0){
+	negativo=0;
+}
+
+document.getElementById('producto').value=negativo;
 
 }//FIN DE LA FUNCIÓN

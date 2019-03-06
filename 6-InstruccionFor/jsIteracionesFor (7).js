@@ -1,23 +1,21 @@
 function Mostrar()
 {
-var numero;
-var contarPar=0;
-
-    numero = parseInt( prompt ( " Ingrese numero"));
-	
-    while (isNaN(numero)){
-	    numero = parseInt( prompt ( " Ingrese numero"));
-		}
-for (i=1; i<=numero;i++){
-
-    if ( numero % i == 0 ){
-        contarPar++;
-        console.log(i);
+    var numero;
+    var contarDiv=0;
     
+    numero = parseInt(prompt("Ingrese un numero"));
+    while(isNaN(numero)){
+        numero = parseInt(prompt("Eso no es un numero. Ingrese un numero"));
     }
-}
-alert("Numeros divisibles    encontrados "+ contarPar)
-
+    
+    for(var i=1; i <=numero;i++){
+    
+        if (numero % i == 0){
+            contarDiv++;
+            console.log(i);	
+        }
+    }
+    alert("La cantidad de numeros divisibles encontrados son "+contarDiv);
 
 
 }//FIN DE LA FUNCIÓN

@@ -1,18 +1,14 @@
 function Mostrar()
 {
 //tomo la edad  
-// declarar las variables
 var edad;
+edad = document.getElementById("edad").value;
 
-//siempre parciarlo para trabajar con cualquier operacion matematica
-//indicarle que valor tomar a la variable, es este caso 
-//el que ingrese el usuario en la caja de texto ID: "edad"
-edad = parseInt(document.getElementById("edad").value);
-
-//indicarle la condicion "si la variable es igual a 15"
-if (edad == 15)
-{
-   alert ("Niña bonita")    
+if (edad == "15"){
+    alert("niña bonita");
 }
 
+else {
+    alert("ingrese 15");
+}
 }//FIN DE LA FUNCIÓN

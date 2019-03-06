@@ -6,11 +6,9 @@ function Mostrar()
 
 		//console.log() escribe en la consola
 		//document.write() escribe en el html
-		//"<br>" el br lista una debajo del otro
-		document.write ("numero "+contador +"<br>");
+		document.write ("numero "+contador+"<br>");
 		contador=contador-1;
-	}
-	
+	}	
 
 
 }//FIN DE LA FUNCIÓN

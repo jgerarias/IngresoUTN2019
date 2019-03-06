@@ -2,14 +2,9 @@ function Mostrar()
 {
 
 	var numero = prompt("ingrese un número entre 0 y 10.");
-while (numero < 0 || numero > 10 || isNaN (numero)){
-/* isNaN intenta convertir el parámetro pasado a un número.
-Si el parámetro no se puede convertir, devuelve true;
-en caso contrario, devuelve false
-*/
-	alert ("ingreso incorrecto");
-	numero = prompt("ingrese un número entre 0 y 10.");
+while(numero < 0 || numero > 9 || isNaN(numero)){
+	alert(numero+ " ERROR");
+	numero = prompt("REINGRESE numero del 0 al 10.")
 }
-alert("Ingreso correcto");
-document.getElementById("Numero").value = numero;
-}//FIN DE LA FUNCIÓN	
+alert(numero +" ES CORRECTO")
+}//FIN DE LA FUNCIÓN
